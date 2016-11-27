@@ -2,7 +2,11 @@
   "name": "wa-homework",
   "version": "1.0.0",
   "description": "chat app with react, redis, node",
-  "main": "index.js",
+  "main": "dist/api-server.js",
+  "engines": {
+    "node": "4.6.0",
+    "npm": "2.15.9"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "api-dev": "nodemon src/api/api-server.js  --exec babel-node --presets es2015,stage-2",
