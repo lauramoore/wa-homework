@@ -4,8 +4,8 @@
   "description": "chat app with react, redis, node",
   "main": "dist/api-server.js",
   "engines": {
-    "node": "4.6.0",
-    "npm": "2.15.9"
+    "node": "6.9.1",
+    "npm": "3.10.8"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
