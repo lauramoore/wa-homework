@@ -12,8 +12,7 @@
     "api-dev": "nodemon src/api/api-server.js  --exec babel-node --presets es2015,stage-2",
     "api-build": "node_modules/.bin/babel src/api -d dist --presets es2015,stage-2",
     "api-serve": "node dist/api-server.js",
-    "postinstall": "npm run api-build",
-    "start" : "npm run api-serve"
+    "postinstall": "npm run api-build"
   },
   "repository": {
     "type": "git",
