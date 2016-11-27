@@ -1,0 +1,38 @@
+{
+  "name": "wa-homework",
+  "version": "1.0.0",
+  "description": "chat app with react, redis, node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "api-dev": "nodemon src/api/api-server.js  --exec babel-node --presets es2015,stage-2",
+    "api-build": "babel src/api -d dist --presets es2015,stage-2",
+    "api-serve": "node dist/api-server.js",
+    "postinstall": "npm run api-build && npm run api-serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lauramoore/wa-homework.git"
+  },
+  "keywords": [
+    "react",
+    "redis",
+    "chat",
+    "node"
+  ],
+  "author": "lauramoore",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lauramoore/wa-homework/issues"
+  },
+  "homepage": "https://github.com/lauramoore/wa-homework#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-2": "^6.18.0",
+    "nodemon": "^1.11.0"
+  }
+}
